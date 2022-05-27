@@ -3,9 +3,13 @@
 /*акцентт #2196F3 */
 /*основний колір фону #E5E5E5*/
 /*колір фону героя та футера #2f303a */
+/*шрифт лого Raleway*/
+/*основний шрифт тексту Roboto*/
 
 :root {
     --primary-text-color: #212121;
     --title-text-color: #757575;
     --accent-color: #2196F3;
+    --main-font: Raleway, sans-serif:
 }
+
