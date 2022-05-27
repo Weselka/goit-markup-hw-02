@@ -4,3 +4,8 @@
 /*основний колір фону #E5E5E5*/
 /*колір фону героя та футера #2f303a */
 
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #2196F3;
+}
