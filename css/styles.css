@@ -1,7 +1,7 @@
 /*основний колір тексту #212121 */
 /*вторинний колір тексту #757575 */
 /*акцентт #2196F3 */
-/*основний колір фону #E5E5E5 */
+/*основний колір фону #ffffff */
 /*колір фону героя та футера #2f303a */
 /*шрифт лого Raleway*/
 /*основний шрифт тексту Roboto*/
@@ -162,8 +162,7 @@ body {
     color: var(--title-text-color);
 }
 .teams-name {    
-    font-weight: 500;    
-    letter-spacing: 0.03em;
+    font-weight: 500; 
     color: var(--primary-text-color);
 }
 
@@ -194,7 +193,8 @@ body {
 
 /*------------Портфоліо-------------*/
 
-.portfolio-btn {
+.gallery-btn {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -205,6 +205,23 @@ body {
     border-radius: 4px;
 }
 
-/*background: #FFFFFF;
-border: 1px solid #EEEEEE;*/
+.gallery-work {
+    background: var(--primary-bgc);
+    border: 1px solid #eeeeee;
+}
 
+.gallery-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;    
+    color: #212121;
+}
+
+.gallery-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;    
+    color: #757575;
+}
