@@ -1,7 +1,7 @@
 /*основний колір тексту #212121 */
 /*вторинний колір тексту #757575 */
 /*акцентт #2196F3 */
-/*основний колір фону #E5E5E5*/
+/*основний колір фону #E5E5E5 */
 /*колір фону героя та футера #2f303a */
 /*шрифт лого Raleway*/
 /*основний шрифт тексту Roboto*/
@@ -11,10 +11,12 @@
     --title-text-color: #757575;
     --accent-color: #2196F3;
     --main-font: Roboto, sans-serif;
+    --primary-bgc:#E5E5E5;
 }
 
 body {
     font-family: var(--main-font);
+    background-color: var(--primary-bgc);
 }
 
 .list {
@@ -25,11 +27,19 @@ body {
     text-decoration: none;
 }
 
+.section-name, 
+.section-expert {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;    
+}
+
 /*--------------------навігаія по сайту--------------*/
 
 .logo {
     font-family: Raleway, sans-serif;
-    color: #000000;
+    color: var(--accent-color);    
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -37,8 +47,8 @@ body {
     text-decoration: none;
 }
 
-.logo-accent {
-    color: var(--accent-color);
+.logo-up {
+    color: #000000;
 }
 
 .site-nav .link {
@@ -86,6 +96,7 @@ body {
 }
 
 .hero-btn {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;    
@@ -95,10 +106,52 @@ body {
     letter-spacing: 0.06em;
     color: #ffffff;
     background: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-    background: #188CE8;    
+    background: #188CE8;
+}
+
+/*--------------Секції-----------------------*/
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;    
+    color: var(--primary-text-color);
+}
+
+.section-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.section-name {    
+    font-weight: 500;    
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.section-expert {        
+    color: var(--title-text-color);
+}
+
+.section-teams {
+    background: #f5f4fa;
 }
