@@ -11,12 +11,13 @@
     --title-text-color: #757575;
     --accent-color: #2196F3;
     --main-font: Roboto, sans-serif;
-    --primary-bgc:#E5E5E5;
+    --primary-bgc:#FFFFFF;
 }
 
 body {
     font-family: var(--main-font);
     background-color: var(--primary-bgc);
+    font-size: 14px;
 }
 
 .list {
@@ -32,6 +33,13 @@ body {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    letter-spacing: 0.03em;    
+}
+
+.footer-address,
+.footer-link {
+    font-style: normal;
+    line-height: 1.71;
     letter-spacing: 0.03em;    
 }
 
@@ -53,14 +61,15 @@ body {
 
 .site-nav .link {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.footer .link:hover,
+.footer .link:focus{
     color: var(--accent-color);
 }
 
@@ -68,18 +77,19 @@ body {
 
 .contact .link {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
 
 .contact .link:hover,
-.contact .link:focus {
+.contact .link:focus,
+.footer .link:hover,
+.footer .link:focus {
     color: var(--accent-color);
 }
 
-/*-------------Секція герой--------------*/
+/*-------------Герой--------------*/
 
 .hero {
     background: #2F303A;
@@ -99,7 +109,7 @@ body {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.88;    
+    line-height: 1.88;
     display: flex;
     align-items: center;
     text-align: center;
@@ -127,31 +137,48 @@ body {
     margin: -1px;
 }
 
-.section-title {
+.feature-title,
+.work-title,
+.teams-title {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;    
     color: var(--primary-text-color);
 }
 
-.section-text {
-    font-size: 14px;
+.feature-text {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-.section-name {    
+.teams-name {    
     font-weight: 500;    
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
-.section-expert {        
+.teams-expert {        
     color: var(--title-text-color);
 }
 
-.section-teams {
+.teams {
     background: #f5f4fa;
+}
+
+/*--------Футер---------*/
+
+.footer {
+    background-color: #2f303a;
+}
+
+.logo-down {
+    color: #FFFFFF;
+}
+
+.footer-address {
+    color: #FFFFFF;
+}
+.footer-link {
+    color: rgba(255, 255, 255, 0.6);
 }
