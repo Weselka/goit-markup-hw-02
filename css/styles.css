@@ -43,6 +43,13 @@ body {
     letter-spacing: 0.03em;    
 }
 
+.site-nav .link:hover,
+.site-nav .link:focus,
+.footer .link:hover,
+.footer .link:focus {
+    color: var(--accent-color);
+}
+
 /*--------------------навігаія по сайту--------------*/
 
 .logo {
@@ -64,13 +71,6 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus,
-.footer .link:hover,
-.footer .link:focus{
-    color: var(--accent-color);
 }
 
 /*--------------------Контакти-----------------------*/
@@ -182,3 +182,6 @@ body {
 .footer-link {
     color: rgba(255, 255, 255, 0.6);
 }
+
+/*------------Портфоліо-------------*/
+
