@@ -111,7 +111,9 @@ body {
 .contact .link:hover,
 .contact .link:focus,
 .footer .link:hover,
-.footer .link:focus {
+.footer .link:focus,
+.gallery .link:hover,
+.gallery .link:focus {
     color: var(--accent-color);
 }
 
