@@ -9,9 +9,10 @@
 :root {
     --primary-text-color: #212121;
     --title-text-color: #757575;
+    --more-text-color: #ffffff;
     --accent-color: #2196F3;
     --main-font: Roboto, sans-serif;
-    --primary-bgc:#FFFFFF;
+    --primary-bgc:#ffffff;
 }
 
 body {
@@ -19,6 +20,8 @@ body {
     background-color: var(--primary-bgc);
     font-size: 14px;
 }
+
+/*-------Дублюючі класи---------*/
 
 .list {
     list-style: none;
@@ -28,8 +31,31 @@ body {
     text-decoration: none;
 }
 
-.section-name, 
-.section-expert {
+.btn:hover,
+.btn:focus {
+    background: #188CE8;
+    color: var(--more-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/*--------------Об'єднані класи-----*/
+
+.teams-name, 
+.teams-expert {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -102,7 +128,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--more-text-color);
 }
 
 .hero-btn {
@@ -114,28 +140,11 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #ffffff;
+    color: var(--more-text-color);
     background: var(--accent-color);
-}
-.hero-btn:hover,
-.hero-btn:focus {
-    background: #188CE8;
 }
 
 /*--------------Секції-----------------------*/
-
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
 
 .feature-title,
 .work-title,
@@ -173,15 +182,29 @@ body {
 }
 
 .logo-down {
-    color: #FFFFFF;
+    color: var(--more-text-color);
 }
 
 .footer-address {
-    color: #FFFFFF;
+    color: var(--more-text-color);
 }
 .footer-link {
     color: rgba(255, 255, 255, 0.6);
 }
 
 /*------------Портфоліо-------------*/
+
+.portfolio-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;    
+    color: var(--primary-text-color);
+    background: #f5f4fa;
+    border-radius: 4px;
+}
+
+/*background: #FFFFFF;
+border: 1px solid #EEEEEE;*/
 
