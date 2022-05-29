@@ -17,8 +17,7 @@
 
 body {
     font-family: var(--main-font);
-    background-color: var(--primary-bgc);
-    font-size: 14px;
+    background-color: var(--primary-bgc);    
 }
 
 /*-------Дублюючі класи---------*/
@@ -34,9 +33,7 @@ body {
 .btn:hover,
 .btn:focus {
     background: #188CE8;
-    color: var(--more-text-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    color: var(--more-text-color);    
 }
 
 .visually-hidden {
@@ -64,19 +61,25 @@ body {
 
 .footer-address,
 .footer-link {
+    font-size: 14px;
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;    
 }
 
+.nav .link:hover,
 .site-nav .link:hover,
 .site-nav .link:focus,
 .footer .link:hover,
-.footer .link:focus {
+.footer .link:focus,
+.contact .link:hover,
+.contact .link:focus,
+.gallery .link:hover,
+.gallery .link:focus {
     color: var(--accent-color);
 }
 
-/*--------------------навігаія по сайту--------------*/
+/*--------------навігаія по сайту--------------*/
 
 .logo {
     font-family: Raleway, sans-serif;
@@ -85,36 +88,29 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 .logo-up {
-    color: #000000;
+    color: #000000;    
 }
 
 .site-nav .link {
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
 
-/*--------------------Контакти-----------------------*/
+/*------------------Контакти-----------------------*/
 
 .contact .link {
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-}
-
-.contact .link:hover,
-.contact .link:focus,
-.footer .link:hover,
-.footer .link:focus,
-.gallery .link:hover,
-.gallery .link:focus {
-    color: var(--accent-color);
 }
 
 /*-------------Герой--------------*/
@@ -138,31 +134,44 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--more-text-color);
     background: var(--accent-color);
     cursor: pointer;
+    border-radius: 4px;
 }
 
 /*--------------Секції-----------------------*/
 
-.work-title,
-.teams-title {
+.feature-title {
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;    
-    color: var(--primary-text-color);
+    color: var(--primary-text-color);    
 }
 
+
 .feature-text {
+    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
+
+.work-title,
+.teams-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
 .teams-name {    
     font-weight: 500; 
     color: var(--primary-text-color);
@@ -174,6 +183,10 @@ body {
 
 .teams {
     background: #f5f4fa;
+}
+
+.teams-object {
+    background-color: var(--primary-bgc);
 }
 
 /*--------Футер---------*/
@@ -205,12 +218,11 @@ body {
     color: var(--primary-text-color);
     background: #f5f4fa;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .gallery-work {
     background: var(--primary-bgc);
-    border: 1px solid #eeeeee;
 }
 
 .gallery-title {
@@ -218,13 +230,13 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;    
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
-.gallery-link {
+.gallery-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;    
-    color: #757575;
+    color: var(--title-text-color);
 }
