@@ -144,6 +144,7 @@ body {
     letter-spacing: 0.06em;
     color: var(--more-text-color);
     background: var(--accent-color);
+    cursor: pointer;
 }
 
 /*--------------Секції-----------------------*/
@@ -205,6 +206,7 @@ body {
     color: var(--primary-text-color);
     background: #f5f4fa;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .gallery-work {
