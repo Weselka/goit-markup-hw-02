@@ -103,6 +103,10 @@ body {
     color: var(--primary-text-color);
 }
 
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
 /*------------------Контакти-----------------------*/
 
 .contact .link {
